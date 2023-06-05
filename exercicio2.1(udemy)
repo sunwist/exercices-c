@@ -1,0 +1,41 @@
+#include <stdio.h>
+
+int main() {
+    int codigo, qtd;
+    float escolha=0, total;
+    printf("Digite o codigo e a quantidade\t");
+    scanf("%d %d", &codigo, &qtd);
+    switch(codigo){
+        case 1:
+            printf("Voce escolheu Cachorro-Quente\n");
+            escolha=4.00;
+            total=escolha*qtd;
+            printf("Total: %.2f", total);
+            break;
+        case 2:
+            printf("Voce escolheu X-Salada\n");
+            escolha=4.50;
+            total=escolha*qtd;
+            printf("Total: %.2f", total);
+            break;
+        case 3:
+            printf("Voce escolheu X-Bacon\n");
+            escolha=5.00;
+            total=escolha*qtd;
+            printf("Total: %.2f", total);
+            break;
+        case 4:
+            printf("Voce escolheu Torrada Simples\n");
+            escolha=2.00;
+            total=escolha*qtd;
+            printf("Total: %.2f", total);
+            break;
+        case 5:
+            printf("Voce escolheu Refrigerante\n");
+            escolha=1.50;
+            total=escolha*qtd;
+            printf("Total: %.2f", total);
+            break;
+    }
+    return 0;
+}
