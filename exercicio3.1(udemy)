@@ -1,0 +1,16 @@
+#include <stdio.h>
+
+int main() {
+    int senha=2002, tentativa;
+    printf("Digite a senha de quatro digitos\n");
+    while(senha!=tentativa){
+        scanf("%d", &tentativa);
+        if(tentativa!=senha){
+            printf("Senha Invalida\n");
+        }else{
+            printf("Acesso Permitido\n");
+            break;
+        }
+    }
+    return 0;
+}
